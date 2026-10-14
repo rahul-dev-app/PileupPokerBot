@@ -1,0 +1,24 @@
+{
+ "value": {
+  "file": "value.bin",
+  "source": "models/afterstate_mlp/afterstate_params.pkl",
+  "sizes": [
+   250,
+   512,
+   512,
+   1
+  ],
+  "value_scale": 1000.0
+ },
+ "inner": {
+  "file": "inner.bin",
+  "source": "models/td_h128/afterstate_params.pkl",
+  "sizes": [
+   250,
+   128,
+   128,
+   1
+  ],
+  "value_scale": 1000.0
+ }
+}

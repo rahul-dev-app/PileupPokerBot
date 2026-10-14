@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PokerGrid 4x4: You vs Bot replay (demo)</title>
+<link rel="stylesheet" href="extension/replay/replay.css">
+<style>
+  body { margin: 0; padding: 16px 8px; background: #2b2f3a; font-family: system-ui, sans-serif; }
+  .demo-bar { max-width: 1000px; margin: 0 auto 10px; color: #e8e6e1; font-size: 13px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .demo-bar button { font: inherit; }
+</style>
+</head>
+<body>
+<!-- Preview of the compete-mode replay without Puzzmo. Serve this folder over http, e.g.
+     python -m http.server 8000 -d chrome_extension, then open http://localhost:8000/replay_demo.html
+     (?data=other.json loads another bot game answer). -->
+<div class="demo-bar">
+  <span>Demo data: <code id="src"></code></span>
+  <button id="overlay">Show as overlay</button>
+</div>
+<div id="replay"></div>
+<script src="extension/policy.js"></script>
+<script src="extension/replay/replay.js"></script>
+<script>
+  const src = new URLSearchParams(location.search).get("data") || "replay_sample.json";
+  document.getElementById("src").textContent = src;
+  fetch(src)
+    .then((r) => r.json())
+    .then((data) => {
+      PPReplay.render(document.getElementById("replay"), data);
+      document.getElementById("overlay").onclick = () => {
+        const o = document.createElement("div");
+        o.className = "ppr-overlay";
+        const close = Object.assign(document.createElement("button"), { className: "ppr-close", textContent: "Close \u2715" });
+        close.onclick = () => o.remove();
+        const content = document.createElement("div");
+        o.append(close, content);
+        document.body.append(o);
+        PPReplay.render(content, data);
+      };
+    })
+    .catch((e) => (document.getElementById("replay").textContent = "Could not load " + src + ": " + e.message));
+</script>
+</body>
+</html>

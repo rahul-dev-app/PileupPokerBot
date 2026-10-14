@@ -1,0 +1,4427 @@
+{
+ "card_K8S32": {
+  "options": {
+   "inner": "card",
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6812.53515625,
+  "se": 72.65163847379533,
+  "calls_per_game": 359416.0,
+  "calls_per_round": [
+   257312.0,
+   83976.0,
+   18128.0,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 280.816033792,
+  "seconds_per_game": 0.03139752626419067,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -68.635,
+    "diff_se": 36.99385769668098,
+    "wtl": [
+     168,
+     645,
+     187
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 679.765,
+    "diff_se": 63.2227699362612,
+    "wtl": [
+     583,
+     142,
+     275
+    ]
+   }
+  }
+ },
+ "card_K16S64": {
+  "options": {
+   "inner": "card",
+   "num_candidates": 16,
+   "num_samples": 64
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6857.77001953125,
+  "se": 73.29995943696096,
+  "calls_per_game": 579064.0,
+  "calls_per_round": [
+   374048.0,
+   157704.0,
+   47312.0,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 452.429651968,
+  "seconds_per_game": 0.06884360790252686,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -23.4,
+    "diff_se": 47.27067914793596,
+    "wtl": [
+     275,
+     454,
+     271
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 725.0,
+    "diff_se": 63.43016621439665,
+    "wtl": [
+     607,
+     133,
+     260
+    ]
+   }
+  }
+ },
+ "card_K32S64": {
+  "options": {
+   "inner": "card",
+   "num_candidates": 32,
+   "num_samples": 64
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6913.48486328125,
+  "se": 74.32943676751553,
+  "calls_per_game": 871928.0,
+  "calls_per_round": [
+   529696.0,
+   256008.0,
+   86224.0,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 681.247809536,
+  "seconds_per_game": 0.1257169735431671,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 32.315,
+    "diff_se": 49.70031324762362,
+    "wtl": [
+     296,
+     429,
+     275
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 780.715,
+    "diff_se": 64.69284719544545,
+    "wtl": [
+     616,
+     128,
+     256
+    ]
+   }
+  }
+ },
+ "card_K8S32_exact": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6843.03515625,
+  "se": 72.93415123360623,
+  "calls_per_game": 349688.0,
+  "calls_per_round": [
+   257312.0,
+   83976.0,
+   8400.0,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 273.215430656,
+  "seconds_per_game": 0.028510808229446412,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -38.135,
+    "diff_se": 30.233989000227307,
+    "wtl": [
+     113,
+     757,
+     130
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 710.265,
+    "diff_se": 62.57908833685636,
+    "wtl": [
+     590,
+     139,
+     271
+    ]
+   }
+  }
+ },
+ "card_K8S32_sym": {
+  "options": {
+   "inner": "card",
+   "num_candidates": 8,
+   "num_samples": 32,
+   "round1_symmetry": true
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6847.375,
+  "se": 74.23805034011461,
+  "calls_per_game": 148921.0,
+  "calls_per_round": [
+   46817.0,
+   83976.0,
+   18128.0,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 116.353764352,
+  "seconds_per_game": 0.020032788276672365,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -33.795,
+    "diff_se": 45.80809704331463,
+    "wtl": [
+     264,
+     450,
+     286
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 714.605,
+    "diff_se": 62.42687990208472,
+    "wtl": [
+     587,
+     146,
+     267
+    ]
+   }
+  }
+ },
+ "argmax": {
+  "options": {
+   "num_samples": 0
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6654.78515625,
+  "se": 72.00771814116266,
+  "calls_per_game": 286200.0,
+  "calls_per_round": [
+   218400.0,
+   59400.0,
+   8400.0,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 223.6114944,
+  "seconds_per_game": 0.017700190544128417,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -226.385,
+    "diff_se": 55.26016279714861,
+    "wtl": [
+     326,
+     256,
+     418
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 522.015,
+    "diff_se": 57.782564754124266,
+    "wtl": [
+     562,
+     188,
+     250
+    ]
+   }
+  }
+ },
+ "beam8_argmax": {
+  "options": {
+   "outer": "beam",
+   "beam_width": 8,
+   "num_samples": 0
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6644.93994140625,
+  "se": 72.8088799511016,
+  "calls_per_game": 2226.07,
+  "calls_per_round": [
+   1016.388,
+   758.872,
+   450.81,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 1.7392552038400002,
+  "seconds_per_game": 0.0020150728225708007,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -236.23,
+    "diff_se": 56.82885099494275,
+    "wtl": [
+     321,
+     256,
+     423
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 512.17,
+    "diff_se": 55.47459212532772,
+    "wtl": [
+     537,
+     232,
+     231
+    ]
+   }
+  }
+ },
+ "beam16_argmax": {
+  "options": {
+   "outer": "beam",
+   "beam_width": 16,
+   "num_samples": 0
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6656.18017578125,
+  "se": 71.83844055332854,
+  "calls_per_game": 4104.757,
+  "calls_per_round": [
+   1914.122,
+   1391.816,
+   798.819,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.2070959011839997,
+  "seconds_per_game": 0.0027777609825134276,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -224.99,
+    "diff_se": 55.57316597672547,
+    "wtl": [
+     328,
+     260,
+     412
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 523.41,
+    "diff_se": 55.609797891392496,
+    "wtl": [
+     542,
+     217,
+     241
+    ]
+   }
+  }
+ },
+ "beam32_argmax": {
+  "options": {
+   "outer": "beam",
+   "beam_width": 32,
+   "num_samples": 0
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6673.90478515625,
+  "se": 72.34409616277773,
+  "calls_per_game": 6740.458,
+  "calls_per_round": [
+   2928.032,
+   2486.404,
+   1326.022,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 5.266400720896,
+  "seconds_per_game": 0.0034286835193634035,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -207.265,
+    "diff_se": 55.526276321550114,
+    "wtl": [
+     330,
+     259,
+     411
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 541.135,
+    "diff_se": 57.104813251349235,
+    "wtl": [
+     544,
+     212,
+     244
+    ]
+   }
+  }
+ },
+ "beam64_argmax": {
+  "options": {
+   "outer": "beam",
+   "beam_width": 64,
+   "num_samples": 0
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6681.7001953125,
+  "se": 72.28910372192476,
+  "calls_per_game": 10838.241,
+  "calls_per_round": [
+   4854.921,
+   4013.834,
+   1969.486,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 8.468047752192,
+  "seconds_per_game": 0.005319098711013794,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -199.47,
+    "diff_se": 55.81970089590331,
+    "wtl": [
+     334,
+     263,
+     403
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 548.93,
+    "diff_se": 57.44148308565056,
+    "wtl": [
+     548,
+     207,
+     245
+    ]
+   }
+  }
+ },
+ "beam128_argmax": {
+  "options": {
+   "outer": "beam",
+   "beam_width": 128,
+   "num_samples": 0
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6684.2001953125,
+  "se": 72.62340495474446,
+  "calls_per_game": 17811.919,
+  "calls_per_round": [
+   8445.057,
+   6305.441,
+   3061.421,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 13.916666057728001,
+  "seconds_per_game": 0.007761528730392456,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -196.97,
+    "diff_se": 55.779363177222244,
+    "wtl": [
+     333,
+     265,
+     402
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 551.43,
+    "diff_se": 57.23822909533427,
+    "wtl": [
+     549,
+     209,
+     242
+    ]
+   }
+  }
+ },
+ "beam16_K8S32": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6858.71484375,
+  "se": 72.9224007780428,
+  "calls_per_game": 67589.926,
+  "calls_per_round": [
+   40826.122,
+   25967.071,
+   796.733,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 52.808820262912,
+  "seconds_per_game": 0.01493204140663147,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -22.455,
+    "diff_se": 39.774470536783795,
+    "wtl": [
+     191,
+     598,
+     211
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 725.945,
+    "diff_se": 60.10557804802719,
+    "wtl": [
+     602,
+     146,
+     252
+    ]
+   }
+  }
+ },
+ "beam32_K8S32": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 32,
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6867.0,
+  "se": 72.20312157763449,
+  "calls_per_game": 70223.929,
+  "calls_per_round": [
+   41840.032,
+   27060.99,
+   1322.907,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 54.866798414848,
+  "seconds_per_game": 0.022817143201828004,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -14.17,
+    "diff_se": 34.52957141932698,
+    "wtl": [
+     172,
+     644,
+     184
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 734.23,
+    "diff_se": 59.763934232402534,
+    "wtl": [
+     600,
+     146,
+     254
+    ]
+   }
+  }
+ },
+ "beam64_K8S32": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 64,
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6850.919921875,
+  "se": 72.2153120962512,
+  "calls_per_game": 74317.194,
+  "calls_per_round": [
+   43766.921,
+   28586.368,
+   1963.905,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 58.064915478528,
+  "seconds_per_game": 0.03387958216667175,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -30.25,
+    "diff_se": 34.75625461315898,
+    "wtl": [
+     154,
+     661,
+     185
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 718.15,
+    "diff_se": 60.541726339179725,
+    "wtl": [
+     601,
+     144,
+     255
+    ]
+   }
+  }
+ },
+ "ibeam2_K8S32": {
+  "options": {
+   "inner": "beam",
+   "exact_last": true,
+   "inner_width": 2,
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6858.81005859375,
+  "se": 72.3166810065979,
+  "calls_per_game": 386808.998,
+  "calls_per_round": [
+   280503.118,
+   97905.88,
+   8400.0,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 302.21851184537604,
+  "seconds_per_game": 0.06769220209121704,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -22.36,
+    "diff_se": 23.58898409365207,
+    "wtl": [
+     84,
+     830,
+     86
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 726.04,
+    "diff_se": 61.91386593643782,
+    "wtl": [
+     600,
+     135,
+     265
+    ]
+   }
+  }
+ },
+ "ibeam4_K8S32": {
+  "options": {
+   "inner": "beam",
+   "exact_last": true,
+   "inner_width": 4,
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6855.919921875,
+  "se": 71.9958364387237,
+  "calls_per_game": 458782.725,
+  "calls_per_round": [
+   325737.319,
+   124645.406,
+   8400.0,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 358.45244843520004,
+  "seconds_per_game": 0.0948815495967865,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -25.25,
+    "diff_se": 17.72252875651569,
+    "wtl": [
+     56,
+     889,
+     55
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 723.15,
+    "diff_se": 61.31114241052505,
+    "wtl": [
+     589,
+     144,
+     267
+    ]
+   }
+  }
+ },
+ "b16_hA16": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving": [
+    [
+     16,
+     8
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     4,
+     16
+    ],
+    [
+     2,
+     32
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6898.1650390625,
+  "se": 72.14905558531476,
+  "calls_per_game": 83462.965,
+  "calls_per_round": [
+   50555.018,
+   32111.038,
+   796.909,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 65.21061611008,
+  "seconds_per_game": 0.020817357778549195,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 16.995,
+    "diff_se": 48.88410529738399,
+    "wtl": [
+     278,
+     443,
+     279
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 765.395,
+    "diff_se": 61.64783065119972,
+    "wtl": [
+     611,
+     138,
+     251
+    ]
+   }
+  }
+ },
+ "b16_hC32": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving": [
+    [
+     32,
+     4
+    ],
+    [
+     16,
+     4
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     4,
+     16
+    ],
+    [
+     2,
+     32
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6903.97509765625,
+  "se": 72.54644024284451,
+  "calls_per_game": 99343.895,
+  "calls_per_round": [
+   60291.922,
+   38255.15,
+   796.823,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 77.61857729024001,
+  "seconds_per_game": 0.056585867643356325,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 22.805,
+    "diff_se": 48.241964036190204,
+    "wtl": [
+     296,
+     419,
+     285
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 771.205,
+    "diff_se": 61.884830978845535,
+    "wtl": [
+     616,
+     127,
+     257
+    ]
+   }
+  }
+ },
+ "b16_hD16": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving": [
+    [
+     16,
+     4
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     2,
+     16
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6822.7548828125,
+  "se": 73.0796113737313,
+  "calls_per_game": 43782.147,
+  "calls_per_round": [
+   26234.57,
+   16750.911,
+   796.666,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 34.207516836863995,
+  "seconds_per_game": 0.032563257932662966,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -58.415,
+    "diff_se": 46.64136929920802,
+    "wtl": [
+     284,
+     407,
+     309
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 689.985,
+    "diff_se": 63.19980213390517,
+    "wtl": [
+     596,
+     129,
+     275
+    ]
+   }
+  }
+ },
+ "b16_hE8": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving": [
+    [
+     8,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     2,
+     16
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6818.40478515625,
+  "se": 73.35308353993854,
+  "calls_per_game": 35846.135,
+  "calls_per_round": [
+   21370.122,
+   13679.099,
+   796.914,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 28.007015429120003,
+  "seconds_per_game": 0.02775281572341919,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -62.765,
+    "diff_se": 43.5255321820047,
+    "wtl": [
+     234,
+     495,
+     271
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 685.635,
+    "diff_se": 62.3602447228753,
+    "wtl": [
+     581,
+     153,
+     266
+    ]
+   }
+  }
+ },
+ "b16_hF32": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving": [
+    [
+     32,
+     8
+    ],
+    [
+     16,
+     8
+    ],
+    [
+     8,
+     16
+    ],
+    [
+     4,
+     32
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6916.39501953125,
+  "se": 72.59158916803169,
+  "calls_per_game": 162834.12,
+  "calls_per_round": [
+   99206.106,
+   62831.109,
+   796.905,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 127.22425196544,
+  "seconds_per_game": 0.07817281675338746,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 35.225,
+    "diff_se": 51.68223512777677,
+    "wtl": [
+     307,
+     398,
+     295
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 783.625,
+    "diff_se": 63.9034548041881,
+    "wtl": [
+     615,
+     123,
+     262
+    ]
+   }
+  }
+ },
+ "b16_K8S16": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "num_candidates": 8,
+   "num_samples": 16
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6814.884765625,
+  "se": 73.10776768873774,
+  "calls_per_game": 35845.978,
+  "calls_per_round": [
+   21370.122,
+   13679.11,
+   796.746,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 28.006892763136,
+  "seconds_per_game": 0.013441219091415406,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -66.285,
+    "diff_se": 47.46649124979186,
+    "wtl": [
+     283,
+     407,
+     310
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 682.115,
+    "diff_se": 64.13381828975587,
+    "wtl": [
+     587,
+     134,
+     279
+    ]
+   }
+  }
+ },
+ "b16_K16S32": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "num_candidates": 16,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6835.009765625,
+  "se": 72.32741236877474,
+  "calls_per_game": 131077.997,
+  "calls_per_round": [
+   79738.57,
+   50543.053,
+   796.374,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 102.412811992064,
+  "seconds_per_game": 0.05397014331817627,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -46.16,
+    "diff_se": 46.27875189843906,
+    "wtl": [
+     238,
+     498,
+     264
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 702.24,
+    "diff_se": 60.85381721362654,
+    "wtl": [
+     593,
+     137,
+     270
+    ]
+   }
+  }
+ },
+ "b16_P1": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6902.259765625,
+  "se": 71.44886894509588,
+  "calls_per_game": 65031.03,
+  "calls_per_round": [
+   50555.018,
+   13679.038,
+   796.974,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 50.80952411136,
+  "seconds_per_game": 0.03926245427131653,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 21.09,
+    "diff_se": 46.7408683131868,
+    "wtl": [
+     272,
+     452,
+     276
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 769.49,
+    "diff_se": 61.98190539582093,
+    "wtl": [
+     614,
+     145,
+     241
+    ]
+   }
+  },
+  "mean_first_1000": 6902.259765625
+ },
+ "b16_P2": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      16,
+      64
+     ],
+     [
+      8,
+      64
+     ]
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6888.169921875,
+  "se": 72.35361542145691,
+  "calls_per_game": 83462.965,
+  "calls_per_round": [
+   50555.018,
+   32111.038,
+   796.909,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 65.21061611008,
+  "seconds_per_game": 0.03417992401123047,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 7.0,
+    "diff_se": 49.79595352021072,
+    "wtl": [
+     292,
+     412,
+     296
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 755.4,
+    "diff_se": 62.50324147750414,
+    "wtl": [
+     607,
+     127,
+     266
+    ]
+   }
+  },
+  "mean_first_1000": 6888.169921875
+ },
+ "b16_P3": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      32,
+      8
+     ],
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      16
+     ],
+     [
+      4,
+      32
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6894.7900390625,
+  "se": 72.2275180556768,
+  "calls_per_game": 132114.265,
+  "calls_per_round": [
+   99206.106,
+   32111.109,
+   797.05,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 103.22246061568,
+  "seconds_per_game": 0.05890536880493164,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 13.62,
+    "diff_se": 48.86660762669066,
+    "wtl": [
+     278,
+     440,
+     282
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 762.02,
+    "diff_se": 60.927563446994895,
+    "wtl": [
+     613,
+     136,
+     251
+    ]
+   }
+  },
+  "mean_first_1000": 6894.7900390625
+ },
+ "b16_P1_n4000": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "mean": 6856.72119140625,
+  "se": 36.076427012150546,
+  "calls_per_game": 65031.52225,
+  "calls_per_round": [
+   50555.017,
+   13679.762,
+   796.74325,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 50.809908712192,
+  "seconds_per_game": 0.03653774106502533,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 21.09,
+    "diff_se": 46.7408683131868,
+    "wtl": [
+     272,
+     452,
+     276
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 769.49,
+    "diff_se": 61.98190539582093,
+    "wtl": [
+     614,
+     145,
+     241
+    ]
+   }
+  },
+  "mean_first_1000": 6902.259765625
+ },
+ "b16_P6_n4000": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ]
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "mean": 6847.87744140625,
+  "se": 36.10496162697473,
+  "calls_per_game": 55303.22475,
+  "calls_per_round": [
+   40826.793,
+   13679.73175,
+   796.7,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 43.209073135872,
+  "seconds_per_game": 0.019842331647872923,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -30.67,
+    "diff_se": 44.42382499658632,
+    "wtl": [
+     244,
+     487,
+     269
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 717.73,
+    "diff_se": 60.532051645193526,
+    "wtl": [
+     599,
+     140,
+     261
+    ]
+   }
+  },
+  "mean_first_1000": 6850.5
+ },
+ "b16_hA16_n4000": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving": [
+    [
+     16,
+     8
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     4,
+     16
+    ],
+    [
+     2,
+     32
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "mean": 6830.1376953125,
+  "se": 36.653805178882365,
+  "calls_per_game": 83463.439,
+  "calls_per_round": [
+   50555.017,
+   32111.762,
+   796.66,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 65.210986451968,
+  "seconds_per_game": 0.030222292244434356,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 16.995,
+    "diff_se": 48.88410529738399,
+    "wtl": [
+     278,
+     443,
+     279
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 765.395,
+    "diff_se": 61.64783065119972,
+    "wtl": [
+     611,
+     138,
+     251
+    ]
+   }
+  },
+  "mean_first_1000": 6898.1650390625
+ },
+ "beam16_K8S32_n4000": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "mean": 6829.72412109375,
+  "se": 36.33076801614612,
+  "calls_per_game": 67590.8465,
+  "calls_per_round": [
+   40826.485,
+   25967.742,
+   796.6195,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 52.809539460608,
+  "seconds_per_game": 0.021892610371112824,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -22.455,
+    "diff_se": 39.774470536783795,
+    "wtl": [
+     191,
+     598,
+     211
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 725.945,
+    "diff_se": 60.10557804802719,
+    "wtl": [
+     602,
+     146,
+     252
+    ]
+   }
+  },
+  "mean_first_1000": 6858.71484375
+ },
+ "b16_K8S16_n4000": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "num_candidates": 8,
+   "num_samples": 16
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "mean": 6781.7939453125,
+  "se": 36.29535452096255,
+  "calls_per_game": 35846.9905,
+  "calls_per_round": [
+   21370.485,
+   13679.771,
+   796.7345,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 28.007683841536,
+  "seconds_per_game": 0.014064676523208619,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -66.285,
+    "diff_se": 47.46649124979186,
+    "wtl": [
+     283,
+     407,
+     310
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 682.115,
+    "diff_se": 64.13381828975587,
+    "wtl": [
+     587,
+     134,
+     279
+    ]
+   }
+  },
+  "mean_first_1000": 6814.884765625
+ },
+ "afterstate_distill_h128": {
+  "options": {
+   "agent": "afterstate"
+  },
+  "model": "models/distill_h128/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 5602.625,
+  "se": 66.40664964165607,
+  "calls_per_game": 494.0,
+  "calls_per_round": [
+   208.0,
+   152.0,
+   96.0,
+   38.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 48512,
+  "gflop_per_game": 0.047929856,
+  "seconds_per_game": 0.0067996599674224854,
+  "game_batch": 40,
+  "paired": {
+   "afterstate_mlp": {
+    "diff": -530.145,
+    "diff_se": 63.573141327712236,
+    "wtl": [
+     359,
+     87,
+     554
+    ]
+   },
+   "search_value_K8S32": {
+    "diff": -1278.545,
+    "diff_se": 65.39380328045222,
+    "wtl": [
+     223,
+     57,
+     720
+    ]
+   }
+  },
+  "mean_first_1000": 5602.625
+ },
+ "afterstate_td_h128": {
+  "options": {
+   "agent": "afterstate"
+  },
+  "model": "models/td_h128/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 5963.3349609375,
+  "se": 68.38369081161682,
+  "calls_per_game": 494.0,
+  "calls_per_round": [
+   208.0,
+   152.0,
+   96.0,
+   38.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 48512,
+  "gflop_per_game": 0.047929856,
+  "seconds_per_game": 0.006691082000732422,
+  "game_batch": 40,
+  "paired": {
+   "afterstate_mlp": {
+    "diff": -169.435,
+    "diff_se": 58.90718812324679,
+    "wtl": [
+     390,
+     144,
+     466
+    ]
+   },
+   "search_value_K8S32": {
+    "diff": -917.835,
+    "diff_se": 62.440285690025895,
+    "wtl": [
+     260,
+     103,
+     637
+    ]
+   }
+  },
+  "mean_first_1000": 5963.3349609375
+ },
+ "afterstate_distill_h256": {
+  "options": {
+   "agent": "afterstate"
+  },
+  "model": "models/distill_h256/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 5839.1650390625,
+  "se": 67.96366220785347,
+  "calls_per_game": 494.0,
+  "calls_per_round": [
+   208.0,
+   152.0,
+   96.0,
+   38.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 129792,
+  "gflop_per_game": 0.128234496,
+  "seconds_per_game": 0.007657012701034546,
+  "game_batch": 40,
+  "paired": {
+   "afterstate_mlp": {
+    "diff": -293.605,
+    "diff_se": 62.144872790836004,
+    "wtl": [
+     379,
+     134,
+     487
+    ]
+   },
+   "search_value_K8S32": {
+    "diff": -1042.005,
+    "diff_se": 62.32280109648083,
+    "wtl": [
+     245,
+     79,
+     676
+    ]
+   }
+  },
+  "mean_first_1000": 5839.1650390625
+ },
+ "afterstate_distill_h64": {
+  "options": {
+   "agent": "afterstate"
+  },
+  "model": "models/distill_h64/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 4630.77490234375,
+  "se": 64.29635815119808,
+  "calls_per_game": 494.0,
+  "calls_per_round": [
+   208.0,
+   152.0,
+   96.0,
+   38.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 20160,
+  "gflop_per_game": 0.01991808,
+  "seconds_per_game": 0.006200747013092041,
+  "game_batch": 40,
+  "paired": {
+   "afterstate_mlp": {
+    "diff": -1501.995,
+    "diff_se": 75.33342963515996,
+    "wtl": [
+     235,
+     35,
+     730
+    ]
+   },
+   "search_value_K8S32": {
+    "diff": -2250.395,
+    "diff_se": 73.14942178091282,
+    "wtl": [
+     129,
+     22,
+     849
+    ]
+   }
+  },
+  "mean_first_1000": 4630.77490234375
+ },
+ "afterstate_mlp512": {
+  "options": {
+   "agent": "afterstate"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6132.77001953125,
+  "se": 72.46534511456716,
+  "calls_per_game": 494.0,
+  "calls_per_round": [
+   208.0,
+   152.0,
+   96.0,
+   38.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 390656,
+  "gflop_per_game": 0.385968128,
+  "seconds_per_game": 0.006930576801300049,
+  "game_batch": 40,
+  "paired": {
+   "afterstate_mlp": {
+    "diff": 0.0,
+    "diff_se": 0.0,
+    "wtl": [
+     0,
+     1000,
+     0
+    ]
+   }
+  },
+  "mean_first_1000": 6132.77001953125
+ },
+ "b16_P1_td_h128": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ]
+  },
+  "model": "models/td_h128/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6752.85498046875,
+  "se": 71.21975822282256,
+  "calls_per_game": 65028.022,
+  "calls_per_round": [
+   50552.679,
+   13678.946,
+   796.397,
+   0.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 48512,
+  "gflop_per_game": 6.309278806528,
+  "seconds_per_game": 0.03535447692871094,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -128.315,
+    "diff_se": 53.136822992466655,
+    "wtl": [
+     324,
+     301,
+     375
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 620.085,
+    "diff_se": 58.98259925426981,
+    "wtl": [
+     590,
+     155,
+     255
+    ]
+   }
+  },
+  "mean_first_1000": 6752.85498046875
+ },
+ "b16_P1_ntinner": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/afterstate_ntuple/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6688.5849609375,
+  "se": 70.91771283976892,
+  "calls_per_game": 4550.813,
+  "calls_per_round": [
+   2234.122,
+   1520.053,
+   796.638,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.555604806656,
+  "seconds_per_game": 0.033952560424804684,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -192.585,
+    "diff_se": 59.23708107722349,
+    "wtl": [
+     342,
+     230,
+     428
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 555.815,
+    "diff_se": 61.03394795995568,
+    "wtl": [
+     575,
+     120,
+     305
+    ]
+   }
+  },
+  "mean_first_1000": 6688.5849609375
+ },
+ "card_K32S64_n4000": {
+  "options": {
+   "inner": "card",
+   "num_candidates": 32,
+   "num_samples": 64
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "mean": 6898.01904296875,
+  "se": 36.88725090825088,
+  "calls_per_game": 871928.0,
+  "calls_per_round": [
+   529696.0,
+   256008.0,
+   86224.0,
+   0.0
+  ],
+  "macs_per_call": 390656,
+  "gflop_per_game": 681.247809536,
+  "seconds_per_game": 0.19391201049089432,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 11.735,
+    "diff_se": 50.05078266741311,
+    "wtl": [
+     293,
+     428,
+     279
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 760.135,
+    "diff_se": 64.06024017396552,
+    "wtl": [
+     613,
+     128,
+     259
+    ]
+   }
+  },
+  "mean_first_1000": 6892.90478515625
+ },
+ "b16_P1_ntinner_td_h128": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/afterstate_ntuple/afterstate_params.pkl"
+  },
+  "model": "models/td_h128/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6565.18017578125,
+  "se": 69.74762378307996,
+  "calls_per_game": 4546.959,
+  "calls_per_round": [
+   2230.663,
+   1519.624,
+   796.672,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60930.016,
+  "macs_per_call": 48512,
+  "gflop_per_game": 0.44116415001599996,
+  "seconds_per_game": 0.014247971534729004,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -315.99,
+    "diff_se": 56.81321467107156,
+    "wtl": [
+     335,
+     202,
+     463
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 432.41,
+    "diff_se": 60.10052716295645,
+    "wtl": [
+     567,
+     132,
+     301
+    ]
+   }
+  },
+  "mean_first_1000": 6565.18017578125
+ },
+ "b16_P1_h128inner": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h128/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6897.39013671875,
+  "se": 71.55141135691805,
+  "calls_per_game": 4549.984,
+  "calls_per_round": [
+   2234.122,
+   1519.029,
+   796.833,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.5549570990080004,
+  "seconds_per_game": 0.02389783239364624,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 16.22,
+    "diff_se": 48.982924458309846,
+    "wtl": [
+     299,
+     402,
+     299
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 764.62,
+    "diff_se": 61.99807914296554,
+    "wtl": [
+     610,
+     143,
+     247
+    ]
+   }
+  },
+  "mean_first_1000": 6897.39013671875
+ },
+ "argmax_beam16_td_h128": {
+  "options": {
+   "outer": "beam",
+   "beam_width": 16,
+   "num_samples": 0
+  },
+  "model": "models/td_h128/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6473.78515625,
+  "se": 70.09015496703672,
+  "calls_per_game": 4099.464,
+  "calls_per_round": [
+   1910.663,
+   1390.952,
+   797.849,
+   0.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 48512,
+  "gflop_per_game": 0.39774639513599996,
+  "seconds_per_game": 0.004811240673065186,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -407.385,
+    "diff_se": 58.562880288820516,
+    "wtl": [
+     330,
+     172,
+     498
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 341.015,
+    "diff_se": 58.61469335458518,
+    "wtl": [
+     544,
+     148,
+     308
+    ]
+   }
+  },
+  "mean_first_1000": 6473.78515625
+ },
+ "b16_P1_h128inner_n4000": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h128/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "mean": 6840.619140625,
+  "se": 36.02318710310631,
+  "calls_per_game": 4550.86875,
+  "calls_per_round": [
+   2234.485,
+   1519.66725,
+   796.7165,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.532,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.5556483647999997,
+  "seconds_per_game": 0.01957684260606766,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 16.22,
+    "diff_se": 48.982924458309846,
+    "wtl": [
+     299,
+     402,
+     299
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 764.62,
+    "diff_se": 61.99807914296554,
+    "wtl": [
+     610,
+     143,
+     247
+    ]
+   }
+  },
+  "mean_first_1000": 6897.39013671875
+ },
+ "afterstate_td_h64": {
+  "options": {
+   "agent": "afterstate"
+  },
+  "model": "models/td_h64/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 5693.89990234375,
+  "se": 67.59072807119715,
+  "calls_per_game": 494.0,
+  "calls_per_round": [
+   208.0,
+   152.0,
+   96.0,
+   38.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 20160,
+  "gflop_per_game": 0.01991808,
+  "seconds_per_game": 0.006087072610855102,
+  "game_batch": 40,
+  "paired": {
+   "afterstate_mlp": {
+    "diff": -438.87,
+    "diff_se": 60.43639823261584,
+    "wtl": [
+     353,
+     119,
+     528
+    ]
+   },
+   "search_value_K8S32": {
+    "diff": -1187.27,
+    "diff_se": 63.84538456482372,
+    "wtl": [
+     235,
+     70,
+     695
+    ]
+   }
+  },
+  "mean_first_1000": 5693.89990234375
+ },
+ "b16_P3_h128inner_n4000": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      32,
+      8
+     ],
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      16
+     ],
+     [
+      4,
+      32
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h128/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "mean": 6826.5361328125,
+  "se": 36.17731725742174,
+  "calls_per_game": 5062.89975,
+  "calls_per_round": [
+   2554.485,
+   1711.761,
+   796.65375,
+   0.0
+  ],
+  "inner_model_calls_per_game": 128019.04,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.955704329472,
+  "seconds_per_game": 0.026353316366672517,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -31.07,
+    "diff_se": 51.457967094294325,
+    "wtl": [
+     292,
+     398,
+     310
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 717.33,
+    "diff_se": 62.73861135261487,
+    "wtl": [
+     596,
+     141,
+     263
+    ]
+   }
+  },
+  "mean_first_1000": 6850.10009765625
+ },
+ "b16_P1_h64inner": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h64/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6859.18994140625,
+  "se": 72.78342577765049,
+  "calls_per_game": 4550.293,
+  "calls_per_round": [
+   2234.122,
+   1519.231,
+   796.94,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.555198524416,
+  "seconds_per_game": 0.017438393354415892,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -21.98,
+    "diff_se": 51.20216784074275,
+    "wtl": [
+     306,
+     370,
+     324
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 726.42,
+    "diff_se": 64.03109607733468,
+    "wtl": [
+     607,
+     136,
+     257
+    ]
+   }
+  },
+  "mean_first_1000": 6859.18994140625
+ },
+ "b16_P1_h64inner_n4000": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h64/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "mean": 6836.6650390625,
+  "se": 36.225268689422,
+  "calls_per_game": 4551.38775,
+  "calls_per_round": [
+   2234.485,
+   1519.96275,
+   796.94,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.532,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.556053865728,
+  "seconds_per_game": 0.011297909379005431,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -21.98,
+    "diff_se": 51.20216784074275,
+    "wtl": [
+     306,
+     370,
+     324
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 726.42,
+    "diff_se": 64.03109607733468,
+    "wtl": [
+     607,
+     136,
+     257
+    ]
+   }
+  },
+  "mean_first_1000": 6859.18994140625
+ },
+ "afterstate_td_h256": {
+  "options": {
+   "agent": "afterstate"
+  },
+  "model": "models/td_h256/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6040.580078125,
+  "se": 72.43799944202732,
+  "calls_per_game": 494.0,
+  "calls_per_round": [
+   208.0,
+   152.0,
+   96.0,
+   38.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 129792,
+  "gflop_per_game": 0.128234496,
+  "seconds_per_game": 0.004216194152832031,
+  "game_batch": 40,
+  "paired": {
+   "afterstate_mlp": {
+    "diff": -92.19,
+    "diff_se": 58.157608369939965,
+    "wtl": [
+     400,
+     167,
+     433
+    ]
+   },
+   "search_value_K8S32": {
+    "diff": -840.59,
+    "diff_se": 61.39054162084336,
+    "wtl": [
+     260,
+     125,
+     615
+    ]
+   }
+  },
+  "mean_first_1000": 6040.580078125
+ },
+ "b16_P1_td_h256": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ]
+  },
+  "model": "models/td_h256/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6804.90478515625,
+  "se": 72.11842874088633,
+  "calls_per_game": 65031.04,
+  "calls_per_round": [
+   50554.222,
+   13679.377,
+   797.441,
+   0.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 129792,
+  "gflop_per_game": 16.88101748736,
+  "seconds_per_game": 0.011510076999664307,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -76.265,
+    "diff_se": 54.11863589861193,
+    "wtl": [
+     309,
+     339,
+     352
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 672.135,
+    "diff_se": 61.19488770359871,
+    "wtl": [
+     586,
+     161,
+     253
+    ]
+   }
+  },
+  "mean_first_1000": 6804.90478515625
+ },
+ "b16_P1_h128inner_td_h256": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h128/afterstate_params.pkl"
+  },
+  "model": "models/td_h256/afterstate_params.pkl",
+  "num_decks": 1000,
+  "mean": 6701.33984375,
+  "se": 69.51896856466881,
+  "calls_per_game": 4548.751,
+  "calls_per_round": [
+   2232.206,
+   1519.218,
+   797.327,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60930.016,
+  "macs_per_call": 129792,
+  "gflop_per_game": 1.1807829795840001,
+  "seconds_per_game": 0.01117875838279724,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -179.83,
+    "diff_se": 53.168994377015096,
+    "wtl": [
+     321,
+     305,
+     374
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 568.57,
+    "diff_se": 59.710647430056525,
+    "wtl": [
+     587,
+     149,
+     264
+    ]
+   }
+  },
+  "mean_first_1000": 6701.33984375
+ },
+ "b8_P1_h64inner_n4000": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 8,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h64/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 4000,
+  "search_seed": 0,
+  "mean": 6805.6689453125,
+  "se": 35.97996441882786,
+  "calls_per_game": 2673.734,
+  "calls_per_round": [
+   1336.43675,
+   887.06025,
+   450.237,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60933.012,
+  "macs_per_call": 390656,
+  "gflop_per_game": 2.0890204590079997,
+  "seconds_per_game": 0.010362565398216247,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -94.38,
+    "diff_se": 53.67934787223097,
+    "wtl": [
+     315,
+     333,
+     352
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 654.02,
+    "diff_se": 63.45558407855649,
+    "wtl": [
+     596,
+     143,
+     261
+    ]
+   }
+  },
+  "mean_first_1000": 6786.7900390625
+ },
+ "b8_P1_h64inner": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 8,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h64/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 0,
+  "mean": 6786.7900390625,
+  "se": 72.89690800256948,
+  "calls_per_game": 2673.525,
+  "calls_per_round": [
+   1336.388,
+   886.84,
+   450.297,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60933.488,
+  "macs_per_call": 390656,
+  "gflop_per_game": 2.0888571648,
+  "seconds_per_game": 0.01053663182258606,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -94.38,
+    "diff_se": 53.67934787223097,
+    "wtl": [
+     315,
+     333,
+     352
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 654.02,
+    "diff_se": 63.45558407855649,
+    "wtl": [
+     596,
+     143,
+     261
+    ]
+   }
+  },
+  "mean_first_1000": 6786.7900390625
+ },
+ "b16_P1_seed1": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 1,
+  "mean": 6880.1298828125,
+  "se": 74.90090110444342,
+  "calls_per_game": 65031.252,
+  "calls_per_round": [
+   50555.018,
+   13679.101,
+   797.133,
+   0.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 390656,
+  "gflop_per_game": 50.809697562624,
+  "seconds_per_game": 0.014108219623565673,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -1.04,
+    "diff_se": 53.5105250833394,
+    "wtl": [
+     339,
+     323,
+     338
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 747.36,
+    "diff_se": 64.96746109708616,
+    "wtl": [
+     603,
+     136,
+     261
+    ]
+   }
+  },
+  "mean_first_1000": 6880.1298828125
+ },
+ "b16_P1_h128inner_seed1": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h128/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 1,
+  "mean": 6866.865234375,
+  "se": 73.78395159154093,
+  "calls_per_game": 4551.177,
+  "calls_per_round": [
+   2234.122,
+   1519.569,
+   797.486,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.555889204224,
+  "seconds_per_game": 0.011450643301010132,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -14.305,
+    "diff_se": 54.181296171555644,
+    "wtl": [
+     353,
+     294,
+     353
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 734.095,
+    "diff_se": 64.64615558102746,
+    "wtl": [
+     607,
+     125,
+     268
+    ]
+   }
+  },
+  "mean_first_1000": 6866.865234375
+ },
+ "b16_P1_h64inner_seed1": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h64/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 1,
+  "mean": 6795.33984375,
+  "se": 72.55015375738196,
+  "calls_per_game": 4550.969,
+  "calls_per_round": [
+   2234.122,
+   1519.648,
+   797.199,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.555726691328,
+  "seconds_per_game": 0.011210124731063843,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -85.83,
+    "diff_se": 52.947105275520556,
+    "wtl": [
+     339,
+     280,
+     381
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 662.57,
+    "diff_se": 62.83661500498961,
+    "wtl": [
+     583,
+     139,
+     278
+    ]
+   }
+  },
+  "mean_first_1000": 6795.33984375
+ },
+ "b16_P1_seed2": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 2,
+  "mean": 6880.3798828125,
+  "se": 72.8399777402011,
+  "calls_per_game": 65031.255,
+  "calls_per_round": [
+   50555.018,
+   13679.024,
+   797.213,
+   0.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 390656,
+  "gflop_per_game": 50.80969990656,
+  "seconds_per_game": 0.014064441919326782,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -0.79,
+    "diff_se": 53.55975002483416,
+    "wtl": [
+     357,
+     295,
+     348
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 747.61,
+    "diff_se": 62.66520578371953,
+    "wtl": [
+     587,
+     145,
+     268
+    ]
+   }
+  },
+  "mean_first_1000": 6880.3798828125
+ },
+ "b16_P1_h128inner_seed2": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h128/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 2,
+  "mean": 6807.96484375,
+  "se": 71.8444470279858,
+  "calls_per_game": 4550.574,
+  "calls_per_round": [
+   2234.122,
+   1519.361,
+   797.091,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.5554180730879996,
+  "seconds_per_game": 0.011475828409194946,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -73.205,
+    "diff_se": 56.815681590997826,
+    "wtl": [
+     356,
+     269,
+     375
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 675.195,
+    "diff_se": 64.06249714548689,
+    "wtl": [
+     594,
+     126,
+     280
+    ]
+   }
+  },
+  "mean_first_1000": 6807.96484375
+ },
+ "b16_P1_h64inner_seed2": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h64/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 2,
+  "mean": 6856.25,
+  "se": 72.21416947639352,
+  "calls_per_game": 4550.728,
+  "calls_per_round": [
+   2234.122,
+   1519.786,
+   796.82,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.5555383951360002,
+  "seconds_per_game": 0.01118219256401062,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -24.92,
+    "diff_se": 55.489584496440294,
+    "wtl": [
+     369,
+     266,
+     365
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 723.48,
+    "diff_se": 62.09953898655241,
+    "wtl": [
+     601,
+     140,
+     259
+    ]
+   }
+  },
+  "mean_first_1000": 6856.25
+ },
+ "argmax_retime": {
+  "options": {
+   "num_samples": 0
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 0,
+  "mean": 6654.78515625,
+  "se": 72.00771814116266,
+  "calls_per_game": 286200.0,
+  "calls_per_round": [
+   218400.0,
+   59400.0,
+   8400.0,
+   0.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 390656,
+  "gflop_per_game": 223.6114944,
+  "seconds_per_game": 0.016912699937820436,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -226.385,
+    "diff_se": 55.26016279714861,
+    "wtl": [
+     326,
+     256,
+     418
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 522.015,
+    "diff_se": 57.782564754124266,
+    "wtl": [
+     562,
+     188,
+     250
+    ]
+   }
+  },
+  "mean_first_1000": 6654.78515625
+ },
+ "card_K8S32_retime": {
+  "options": {
+   "inner": "card",
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 0,
+  "mean": 6812.53515625,
+  "se": 72.65163847379533,
+  "calls_per_game": 359416.0,
+  "calls_per_round": [
+   257312.0,
+   83976.0,
+   18128.0,
+   0.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 390656,
+  "gflop_per_game": 280.816033792,
+  "seconds_per_game": 0.030834097385406493,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -68.635,
+    "diff_se": 36.99385769668098,
+    "wtl": [
+     168,
+     645,
+     187
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 679.765,
+    "diff_se": 63.2227699362612,
+    "wtl": [
+     583,
+     142,
+     275
+    ]
+   }
+  },
+  "mean_first_1000": 6812.53515625
+ },
+ "beam16_K8S32_retime": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "num_candidates": 8,
+   "num_samples": 32
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 0,
+  "mean": 6858.71484375,
+  "se": 72.9224007780428,
+  "calls_per_game": 67589.926,
+  "calls_per_round": [
+   40826.122,
+   25967.071,
+   796.733,
+   0.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 390656,
+  "gflop_per_game": 52.808820262912,
+  "seconds_per_game": 0.012558101177215576,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -22.455,
+    "diff_se": 39.774470536783795,
+    "wtl": [
+     191,
+     598,
+     211
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 725.945,
+    "diff_se": 60.10557804802719,
+    "wtl": [
+     602,
+     146,
+     252
+    ]
+   }
+  },
+  "mean_first_1000": 6858.71484375
+ },
+ "b16_P1_retime": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ]
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 0,
+  "mean": 6902.259765625,
+  "se": 71.44886894509588,
+  "calls_per_game": 65031.03,
+  "calls_per_round": [
+   50555.018,
+   13679.038,
+   796.974,
+   0.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 390656,
+  "gflop_per_game": 50.80952411136,
+  "seconds_per_game": 0.013989727258682251,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 21.09,
+    "diff_se": 46.7408683131868,
+    "wtl": [
+     272,
+     452,
+     276
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 769.49,
+    "diff_se": 61.98190539582093,
+    "wtl": [
+     614,
+     145,
+     241
+    ]
+   }
+  },
+  "mean_first_1000": 6902.259765625
+ },
+ "b16_P1_h128inner_retime": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h128/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 0,
+  "mean": 6897.39013671875,
+  "se": 71.55141135691805,
+  "calls_per_game": 4549.984,
+  "calls_per_round": [
+   2234.122,
+   1519.029,
+   796.833,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.5549570990080004,
+  "seconds_per_game": 0.011475661754608154,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": 16.22,
+    "diff_se": 48.982924458309846,
+    "wtl": [
+     299,
+     402,
+     299
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 764.62,
+    "diff_se": 61.99807914296554,
+    "wtl": [
+     610,
+     143,
+     247
+    ]
+   }
+  },
+  "mean_first_1000": 6897.39013671875
+ },
+ "b16_P1_h64inner_retime": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h64/afterstate_params.pkl"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 0,
+  "mean": 6859.18994140625,
+  "se": 72.78342577765049,
+  "calls_per_game": 4550.293,
+  "calls_per_round": [
+   2234.122,
+   1519.231,
+   796.94,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.555198524416,
+  "seconds_per_game": 0.011197067975997925,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -21.98,
+    "diff_se": 51.20216784074275,
+    "wtl": [
+     306,
+     370,
+     324
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 726.42,
+    "diff_se": 64.03109607733468,
+    "wtl": [
+     607,
+     136,
+     257
+    ]
+   }
+  },
+  "mean_first_1000": 6859.18994140625
+ },
+ "afterstate_retime": {
+  "options": {
+   "agent": "afterstate"
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 0,
+  "mean": 6132.77001953125,
+  "se": 72.46534511456716,
+  "calls_per_game": 494.0,
+  "calls_per_round": [
+   208.0,
+   152.0,
+   96.0,
+   38.0
+  ],
+  "inner_model_calls_per_game": 0.0,
+  "macs_per_call": 390656,
+  "gflop_per_game": 0.385968128,
+  "seconds_per_game": 0.006590800046920776,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -748.4,
+    "diff_se": 61.14052014174564,
+    "wtl": [
+     262,
+     144,
+     594
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 0.0,
+    "diff_se": 0.0,
+    "wtl": [
+     0,
+     1000,
+     0
+    ]
+   }
+  },
+  "mean_first_1000": 6132.77001953125
+ },
+ "b16_P1_h64inner_vmap_retime": {
+  "options": {
+   "inner": "card",
+   "exact_last": true,
+   "outer": "beam",
+   "beam_width": 16,
+   "halving_per_round": [
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ],
+    [
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      2,
+      16
+     ]
+    ],
+    [
+     [
+      16,
+      8
+     ],
+     [
+      8,
+      8
+     ],
+     [
+      4,
+      16
+     ],
+     [
+      2,
+      32
+     ]
+    ]
+   ],
+   "inner_model_path": "models/td_h64/afterstate_params.pkl",
+   "game_vmap": 40
+  },
+  "model": "models/afterstate_mlp/afterstate_params.pkl",
+  "num_decks": 1000,
+  "search_seed": 0,
+  "mean": 6852.89990234375,
+  "se": 72.86363305941683,
+  "calls_per_game": 4550.297,
+  "calls_per_round": [
+   2234.104,
+   1519.254,
+   796.939,
+   0.0
+  ],
+  "inner_model_calls_per_game": 60928.896,
+  "macs_per_call": 390656,
+  "gflop_per_game": 3.5552016496639998,
+  "seconds_per_game": 0.005984639883041382,
+  "game_batch": 40,
+  "paired": {
+   "search_value_K8S32": {
+    "diff": -28.27,
+    "diff_se": 51.26993625374878,
+    "wtl": [
+     307,
+     370,
+     323
+    ]
+   },
+   "afterstate_mlp": {
+    "diff": 720.13,
+    "diff_se": 64.03623015037559,
+    "wtl": [
+     605,
+     137,
+     258
+    ]
+   }
+  },
+  "mean_first_1000": 6852.89990234375
+ }
+}

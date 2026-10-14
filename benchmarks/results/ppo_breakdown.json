@@ -1,0 +1,92 @@
+{
+  "gym_gpu_64": {
+    "num_envs": 64,
+    "num_steps": 64,
+    "iterations": 5,
+    "mean_seconds_per_iteration": {
+      "policy": 0.016693302801286336,
+      "env": 0.16722942960914225,
+      "update": 0.18344239960133563,
+      "total": 0.36736513201176424
+    },
+    "fraction": {
+      "policy": 0.045440629353881525,
+      "env": 0.4552131245917672,
+      "update": 0.4993462460543512
+    },
+    "steps_per_s": 11149.67002330758,
+    "backend_jax": "gpu"
+  },
+  "gym_cpu_64": {
+    "num_envs": 64,
+    "num_steps": 64,
+    "iterations": 5,
+    "mean_seconds_per_iteration": {
+      "policy": 0.028705336216080467,
+      "env": 0.14749424679612275,
+      "update": 0.0986286576022394,
+      "total": 0.2748282406144426
+    },
+    "fraction": {
+      "policy": 0.1044482770471586,
+      "env": 0.5366779136902561,
+      "update": 0.3588738092625854
+    },
+    "steps_per_s": 14903.85409753538,
+    "backend_jax": "cpu"
+  },
+  "jax_gpu_64": {
+    "num_envs": 64,
+    "num_steps": 64,
+    "iterations": 5,
+    "mean_seconds_per_iteration": {
+      "policy": 0.016227753993007354,
+      "env": 0.14517340900783893,
+      "update": 0.1799175734005985,
+      "total": 0.3413187364014448
+    },
+    "fraction": {
+      "policy": 0.047544281231373574,
+      "env": 0.42533091074464796,
+      "update": 0.5271248080239785
+    },
+    "steps_per_s": 12000.513195333222,
+    "backend_jax": "gpu"
+  },
+  "jax_gpu_1024": {
+    "num_envs": 1024,
+    "num_steps": 64,
+    "iterations": 5,
+    "mean_seconds_per_iteration": {
+      "policy": 0.0181961237671203,
+      "env": 0.14683625381439924,
+      "update": 0.17592080940084998,
+      "total": 0.34095318698236954
+    },
+    "fraction": {
+      "policy": 0.053368393262917965,
+      "env": 0.4306639721246895,
+      "update": 0.5159676346123925
+    },
+    "steps_per_s": 192214.07073513826,
+    "backend_jax": "gpu"
+  },
+  "gym_cpu_1024": {
+    "num_envs": 1024,
+    "num_steps": 64,
+    "iterations": 3,
+    "mean_seconds_per_iteration": {
+      "policy": 0.09593661498123159,
+      "env": 2.2975613343393584,
+      "update": 0.8561072223334728,
+      "total": 3.249605171654063
+    },
+    "fraction": {
+      "policy": 0.029522545021184662,
+      "env": 0.7070278427609376,
+      "update": 0.2634496122178777
+    },
+    "steps_per_s": 20167.373123252968,
+    "backend_jax": "cpu"
+  }
+}

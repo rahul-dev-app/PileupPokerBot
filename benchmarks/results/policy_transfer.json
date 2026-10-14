@@ -1,0 +1,35 @@
+{
+  "system": {
+    "python": "3.12.3",
+    "machine": "x86_64",
+    "cpu_count": 16,
+    "cpu": "AMD Ryzen 7 7700X 8-Core Processor",
+    "jax": "0.11.2",
+    "jaxlib": "0.11.2",
+    "backend": "gpu",
+    "devices": [
+      "NVIDIA GeForce RTX 3090"
+    ]
+  },
+  "seed": 0,
+  "agents": {
+    "ppo (models/ppo_cont_control/jax_ppo_params.pkl)": {
+      "games": 1000,
+      "jax_env_mean": 6294.185,
+      "python_env_mean": 6294.185,
+      "se": 67.38654284745532,
+      "paired_diff_mean": 0.0,
+      "games_with_different_score": 0,
+      "python_env_seconds": 1.8252876830010791
+    },
+    "afterstate (models/afterstate_mlp/afterstate_params.pkl)": {
+      "games": 1000,
+      "jax_env_mean": 6132.77,
+      "python_env_mean": 6132.77,
+      "se": 72.46534104489369,
+      "paired_diff_mean": 0.0,
+      "games_with_different_score": 0,
+      "python_env_seconds": 3.9499448549977387
+    }
+  }
+}

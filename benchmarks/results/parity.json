@@ -1,0 +1,30 @@
+{
+  "system": {
+    "python": "3.12.3",
+    "machine": "x86_64",
+    "cpu_count": 16,
+    "cpu": "AMD Ryzen 7 7700X 8-Core Processor",
+    "jax": "0.11.2",
+    "jaxlib": "0.11.2",
+    "backend": "cpu",
+    "devices": [
+      "cpu"
+    ]
+  },
+  "games": 1000,
+  "steps": 16000,
+  "invalid_actions": 3006,
+  "invalid_prob": 0.2,
+  "seed": 0,
+  "mismatches": {
+    "obs": 0,
+    "mask": 0,
+    "reward": 0,
+    "done": 0,
+    "final_score": 0
+  },
+  "max_abs_reward_diff": 0.0,
+  "all_match": true,
+  "mean_final_score": 357.2749938964844,
+  "comparisons": "observation (796-dim) and action mask before every step and after the last; per-step reward (Gym non-terminal reward vs 1 + JAX board score); done flags; final score"
+}

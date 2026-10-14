@@ -1,0 +1,26 @@
+{
+  "system": {
+    "python": "3.12.3",
+    "machine": "x86_64",
+    "cpu_count": 16,
+    "cpu": "AMD Ryzen 7 7700X 8-Core Processor"
+  },
+  "single_process": {
+    "games_per_s": [
+      1965.7489793776688,
+      1915.0801982627459,
+      1938.0884344580409
+    ],
+    "median_games_per_s": 1938.0884344580409
+  },
+  "multi_process": {
+    "processes": 16,
+    "games_per_s": [
+      17183.588052961182,
+      16957.57027955357,
+      17103.500899606195
+    ],
+    "median_games_per_s": 17103.500899606195
+  },
+  "per_step_work": "get_action_mask, random legal action, step (builds the Dict observation), flatten_observation"
+}

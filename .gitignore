@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+
+# training outputs and local tools (not published)
+models/
+runs/
+logs/
+dist/
+chrome_extension/dist/
+.venv/
+.tools*/
+chrome_extension/wasm/target/

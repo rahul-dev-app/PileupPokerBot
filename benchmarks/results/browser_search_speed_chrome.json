@@ -1,0 +1,38 @@
+{
+ "context": "extension service worker, headless Chrome for Testing, single thread",
+ "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+ "games": 20,
+ "game": {
+  "mean_ms": 156.4,
+  "median_ms": 156.6,
+  "max_ms": 160.4
+ },
+ "rounds": [
+  {
+   "mean_ms": 105.5,
+   "median_ms": 105.6,
+   "max_ms": 107.9
+  },
+  {
+   "mean_ms": 33.2,
+   "median_ms": 33.2,
+   "max_ms": 34.5
+  },
+  {
+   "mean_ms": 17.6,
+   "median_ms": 17.7,
+   "max_ms": 18.2
+  },
+  {
+   "mean_ms": 0.1,
+   "median_ms": 0.1,
+   "max_ms": 0.3
+  }
+ ],
+ "bot_game_with_analysis": {
+  "mean_ms": 231.3,
+  "median_ms": 231.8,
+  "max_ms": 235.4
+ },
+ "mean_score": 6146.5
+}

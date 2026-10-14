@@ -1,0 +1,401 @@
+{
+ "hands": [
+  [
+   "QH",
+   "AD",
+   "7S",
+   "JS",
+   "TD"
+  ],
+  [
+   "8D",
+   "QD",
+   "9H",
+   "8C",
+   "JD"
+  ],
+  [
+   "6D",
+   "JH",
+   "AS",
+   "QS",
+   "8S"
+  ],
+  [
+   "KH",
+   "AC",
+   "9S",
+   "7C",
+   "TH"
+  ]
+ ],
+ "settings": {
+  "model": "value_search",
+  "where": "browser",
+  "num_candidates": 16,
+  "num_samples": 64,
+  "beam_width": 16,
+  "halving": [
+   [
+    [
+     16,
+     8
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     4,
+     16
+    ],
+    [
+     2,
+     32
+    ]
+   ],
+   [
+    [
+     8,
+     8
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     2,
+     16
+    ]
+   ],
+   [
+    [
+     16,
+     8
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     4,
+     16
+    ],
+    [
+     2,
+     32
+    ]
+   ]
+  ],
+  "inner": "card",
+  "exact_last": true,
+  "seed": 0
+ },
+ "player": {
+  "rounds": [
+   {
+    "placements": [
+     {
+      "card": "7S",
+      "cell": 1
+     },
+     {
+      "card": "JS",
+      "cell": 12
+     },
+     {
+      "card": "QH",
+      "cell": 14
+     },
+     {
+      "card": "TD",
+      "cell": 15
+     }
+    ],
+    "discard": "AD",
+    "score": 0
+   },
+   {
+    "placements": [
+     {
+      "card": "8D",
+      "cell": 0
+     },
+     {
+      "card": "9H",
+      "cell": 3
+     },
+     {
+      "card": "QD",
+      "cell": 10
+     },
+     {
+      "card": "JD",
+      "cell": 11
+     }
+    ],
+    "discard": "8C",
+    "score": 730
+   },
+   {
+    "placements": [
+     {
+      "card": "6D",
+      "cell": 2
+     },
+     {
+      "card": "QS",
+      "cell": 6
+     },
+     {
+      "card": "8S",
+      "cell": 7
+     },
+     {
+      "card": "JH",
+      "cell": 8
+     }
+    ],
+    "discard": "AS",
+    "score": 3420
+   },
+   {
+    "placements": [
+     {
+      "card": "TH",
+      "cell": 4
+     },
+     {
+      "card": "KH",
+      "cell": 5
+     },
+     {
+      "card": "7C",
+      "cell": 9
+     },
+     {
+      "card": "9S",
+      "cell": 13
+     }
+    ],
+    "discard": "AC",
+    "score": 5200
+   }
+  ],
+  "final_score": 5200
+ },
+ "bot": {
+  "rounds": [
+   {
+    "placements": [
+     {
+      "card": "JS",
+      "cell": 0
+     },
+     {
+      "card": "QH",
+      "cell": 1
+     },
+     {
+      "card": "TD",
+      "cell": 3
+     },
+     {
+      "card": "7S",
+      "cell": 14
+     }
+    ],
+    "discard": "AD",
+    "score": 0
+   },
+   {
+    "placements": [
+     {
+      "card": "QD",
+      "cell": 9
+     },
+     {
+      "card": "JD",
+      "cell": 11
+     },
+     {
+      "card": "9H",
+      "cell": 12
+     },
+     {
+      "card": "8D",
+      "cell": 15
+     }
+    ],
+    "discard": "8C",
+    "score": 730
+   },
+   {
+    "placements": [
+     {
+      "card": "QS",
+      "cell": 5
+     },
+     {
+      "card": "JH",
+      "cell": 8
+     },
+     {
+      "card": "8S",
+      "cell": 10
+     },
+     {
+      "card": "6D",
+      "cell": 13
+     }
+    ],
+    "discard": "AS",
+    "score": 2025
+   },
+   {
+    "placements": [
+     {
+      "card": "KH",
+      "cell": 2
+     },
+     {
+      "card": "AC",
+      "cell": 4
+     },
+     {
+      "card": "7C",
+      "cell": 6
+     },
+     {
+      "card": "9S",
+      "cell": 7
+     }
+    ],
+    "discard": "TH",
+    "score": 5200
+   }
+  ],
+  "final_score": 5200
+ },
+ "analysis": {
+  "rounds": [
+   {
+    "round": 1,
+    "bot_choice": {
+     "placements": [
+      {
+       "card": "JS",
+       "cell": 0
+      },
+      {
+       "card": "QH",
+       "cell": 1
+      },
+      {
+       "card": "TD",
+       "cell": 3
+      },
+      {
+       "card": "7S",
+       "cell": 14
+      }
+     ],
+     "discard": "AD",
+     "score": 0
+    },
+    "bot_value": 6589,
+    "player_value": 6495.5,
+    "loss": 93.5,
+    "same_as_bot": false
+   },
+   {
+    "round": 2,
+    "bot_choice": {
+     "placements": [
+      {
+       "card": "9H",
+       "cell": 0
+      },
+      {
+       "card": "8D",
+       "cell": 3
+      },
+      {
+       "card": "QD",
+       "cell": 10
+      },
+      {
+       "card": "JD",
+       "cell": 11
+      }
+     ],
+     "discard": "8C",
+     "score": 730
+    },
+    "bot_value": 7005.5,
+    "player_value": 6335.5,
+    "loss": 670,
+    "same_as_bot": false
+   },
+   {
+    "round": 3,
+    "bot_choice": {
+     "placements": [
+      {
+       "card": "6D",
+       "cell": 2
+      },
+      {
+       "card": "8S",
+       "cell": 5
+      },
+      {
+       "card": "QS",
+       "cell": 7
+      },
+      {
+       "card": "JH",
+       "cell": 8
+      }
+     ],
+     "discard": "AS",
+     "score": 2940
+    },
+    "bot_value": 6893,
+    "player_value": 6877.8,
+    "loss": 15.2,
+    "same_as_bot": false
+   },
+   {
+    "round": 4,
+    "bot_choice": {
+     "placements": [
+      {
+       "card": "KH",
+       "cell": 4
+      },
+      {
+       "card": "AC",
+       "cell": 5
+      },
+      {
+       "card": "7C",
+       "cell": 9
+      },
+      {
+       "card": "9S",
+       "cell": 13
+      }
+     ],
+     "discard": "TH",
+     "score": 5200
+    },
+    "bot_value": 5200,
+    "player_value": 5200,
+    "loss": 0,
+    "same_as_bot": false
+   }
+  ],
+  "total_loss": 778.7
+ }
+}

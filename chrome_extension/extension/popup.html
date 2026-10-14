@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 270px; margin: 0; padding: 12px 14px; font: 13px/1.4 system-ui, sans-serif; color: #1d2230; background: #f7f5f0; }
+  h1 { font-size: 15px; margin: 0 0 10px; }
+  fieldset { border: 0; padding: 0; margin: 0 0 12px; }
+  legend { font-weight: 600; margin-bottom: 4px; }
+  label.mode { display: block; padding: 6px 8px; margin: 3px 0; border-radius: 8px; background: #fff; cursor: pointer; }
+  label.mode small { display: block; color: #6b6f7b; margin-left: 22px; }
+  .note { margin: 0 0 10px; color: #6b6f7b; }
+  .help { display: block; color: #6b6f7b; margin: 2px 0 4px; }
+  .row { display: flex; gap: 6px; }
+  input[type=url] { flex: 1; min-width: 0; box-sizing: border-box; padding: 5px 6px; font: inherit; border: 1px solid #c9c3b6; border-radius: 6px; }
+  button { font: inherit; padding: 4px 10px; border: 1px solid #c9c3b6; border-radius: 6px; background: #fff; cursor: pointer; }
+  #saved { color: #1d7a4b; height: 16px; margin-top: 6px; font-size: 12px; }
+</style>
+</head>
+<body>
+<h1>PokerGrid 4x4</h1>
+<fieldset>
+  <legend>Mode</legend>
+  <label class="mode"><input type="radio" name="mode" value="compete"> Compete
+    <small>No suggestions. After the game, see the bot play your hands.</small></label>
+  <label class="mode"><input type="radio" name="mode" value="suggest"> Suggest
+    <small>Move suggestions while you play.</small></label>
+</fieldset>
+<p class="note">The bot runs in your browser. No server is needed.</p>
+<label for="analytics"><b>Analytics endpoint</b> (optional)</label>
+<small class="help">Empty = nothing is sent. If set, each compete-mode game sends the scores (no cards) to <i>endpoint</i>/analytics.</small>
+<div class="row"><input type="url" id="analytics" spellcheck="false" placeholder="https://example.com"><button id="save">Save</button></div>
+<div id="saved"></div>
+<script src="popup.js"></script>
+</body>
+</html>

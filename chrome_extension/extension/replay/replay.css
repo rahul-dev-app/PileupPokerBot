@@ -1,0 +1,151 @@
+/* Pile-Up Poker replay (replay.js). Every class starts with "ppr-" so it can sit on any page. */
+.ppr-app {
+  --ppr-card: clamp(40px, 10.5vw, 56px);
+  --ppr-you: #2459d6;
+  --ppr-bot: #c24d0c;
+  --ppr-ink: #1d2230;
+  --ppr-muted: #6b6f7b;
+  --ppr-paper: #f7f5f0;
+  --ppr-cell: #e6e0d3;
+  --ppr-good: #1d7a4b;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--ppr-paper);
+  color: var(--ppr-ink);
+  font: 14px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  outline: none;
+}
+.ppr-app *, .ppr-app *::before, .ppr-app *::after { box-sizing: border-box; }
+.ppr-app h3 { margin: 0; font-size: 16px; }
+
+/* summary header */
+.ppr-header { text-align: center; margin-bottom: 10px; }
+.ppr-summary { display: flex; justify-content: center; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.ppr-who { font-weight: 700; }
+.ppr-label { font-size: 18px; }
+.ppr-big { font-size: 32px; font-variant-numeric: tabular-nums; }
+.ppr-who:first-child { color: var(--ppr-you); }
+.ppr-who:last-child { color: var(--ppr-bot); }
+.ppr-vs { color: var(--ppr-muted); font-size: 16px; }
+.ppr-verdict { font-size: 16px; font-weight: 600; min-height: 22px; }
+.ppr-hidden { visibility: hidden; }
+
+/* stepper */
+.ppr-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 6px 0 14px; }
+.ppr-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; }
+.ppr-btn, .ppr-tab {
+  font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid #c9c3b6; background: #fff; color: var(--ppr-ink);
+}
+.ppr-btn:disabled { opacity: .4; cursor: default; }
+.ppr-play { min-width: 92px; font-weight: 600; }
+.ppr-tab[aria-current="step"] { background: var(--ppr-ink); color: #fff; border-color: var(--ppr-ink); }
+.ppr-btn:focus-visible, .ppr-tab:focus-visible, .ppr-round:focus-visible { outline: 2px solid var(--ppr-you); outline-offset: 2px; }
+
+/* the two games */
+.ppr-sides { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.ppr-side { flex: 1 1 320px; max-width: 470px; background: #fff; border-radius: 12px; padding: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.ppr-side-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+.ppr-you .ppr-side-head { color: var(--ppr-you); }
+.ppr-bot .ppr-side-head { color: var(--ppr-bot); }
+.ppr-side-score { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.ppr-board { display: grid; grid-template-columns: repeat(4, var(--ppr-card)) minmax(78px, auto); gap: 5px; justify-content: center; }
+.ppr-cell {
+  width: var(--ppr-card); height: calc(var(--ppr-card) * 1.32); border-radius: 7px;
+  background: var(--ppr-cell); border: 1px dashed #c9bfa9; position: relative;
+}
+.ppr-corner { background: #ddd0b4; }
+.ppr-cell.ppr-hl { box-shadow: 0 0 0 3px #f2a516; }
+
+.ppr-card {
+  position: relative; width: 100%; height: 100%; border-radius: 7px; background: #fff;
+  border: 1px solid #b9bccb; box-shadow: 0 1px 2px rgba(0,0,0,.18); color: #20232e; user-select: none;
+}
+.ppr-slot .ppr-card, .ppr-cell .ppr-card { position: absolute; inset: -1px; width: auto; height: auto; }
+.ppr-card.ppr-red { color: #c8232c; }
+.ppr-rank { position: absolute; top: 3px; left: 5px; font-weight: 700; font-size: calc(var(--ppr-card) * .3); line-height: 1; }
+.ppr-suit { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding-top: 18%; font-size: calc(var(--ppr-card) * .5); }
+.ppr-current { outline: 2px solid var(--ppr-you); outline-offset: 1px; }
+.ppr-bot .ppr-current { outline-color: var(--ppr-bot); }
+.ppr-dim { filter: grayscale(1) opacity(.4); }
+
+.ppr-row-tag, .ppr-col-tag { display: flex; font-size: 11px; line-height: 1.15; color: var(--ppr-muted); }
+.ppr-row-tag { flex-direction: column; justify-content: center; padding-left: 4px; }
+.ppr-col-tag { flex-direction: column; align-items: center; text-align: center; }
+.ppr-tag-pts { font-weight: 700; color: var(--ppr-ink); }
+.ppr-empty { visibility: hidden; }
+.ppr-final .ppr-row-tag:not(.ppr-empty), .ppr-final .ppr-col-tag:not(.ppr-empty) { color: var(--ppr-good); }
+.ppr-final .ppr-tag-pts { color: var(--ppr-good); font-size: 13px; }
+
+.ppr-pile { display: flex; align-items: center; justify-content: center; gap: 5px; margin-top: 10px; }
+.ppr-pile-label { font-size: 12px; color: var(--ppr-muted); width: 52px; }
+.ppr-slot {
+  position: relative; width: calc(var(--ppr-card) * .8); height: calc(var(--ppr-card) * 1.05);
+  border-radius: 6px; border: 1px dashed #c9bfa9; background: #efebe2; --ppr-card: clamp(32px, 8.4vw, 45px);
+}
+
+.ppr-hands { list-style: none; margin: 10px 0 0; padding: 0; font-size: 13px; }
+.ppr-hands li { display: grid; grid-template-columns: 1fr 1.3fr auto; gap: 6px; padding: 2px 4px; border-radius: 4px; }
+.ppr-hands li:hover { background: #fdf3dc; }
+.ppr-where { color: var(--ppr-muted); }
+.ppr-pts { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.ppr-hands .ppr-total { border-top: 1px solid #e2ddd2; margin-top: 3px; padding-top: 4px; font-weight: 700; }
+.ppr-hands .ppr-none { display: block; color: var(--ppr-muted); }
+
+/* analysis */
+.ppr-analysis { margin-top: 18px; }
+.ppr-accuracy { font-size: 15px; margin: 4px 0 8px; }
+.ppr-rounds { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.ppr-round { background: #fff; border-radius: 10px; padding: 10px 12px; border: 2px solid transparent; cursor: pointer; }
+.ppr-round.ppr-active { border-color: var(--ppr-you); }
+.ppr-round-detail { color: #444955; margin-top: 3px; font-size: 13px; }
+.ppr-mini-box { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
+.ppr-mini { display: grid; grid-template-columns: repeat(4, 32px); gap: 3px; }
+.ppr-mini-cell { height: 28px; border-radius: 4px; background: var(--ppr-cell); display: flex; align-items: center; justify-content: center; font-size: 11px; }
+.ppr-mini-old { color: #8a8d97; }
+.ppr-mini-bot { font-weight: 700; color: #20232e; background: #d9f3e3; border: 1px solid var(--ppr-good); border-radius: 4px; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.ppr-mini-bot.ppr-red { color: #c8232c; }
+.ppr-mini-you { outline: 2px dashed var(--ppr-you); outline-offset: -2px; }
+.ppr-mini-legend { font-size: 12px; color: var(--ppr-muted); max-width: 180px; }
+.ppr-note { font-size: 12px; color: var(--ppr-muted); margin: 10px 0 0; }
+
+/* animations */
+@keyframes ppr-enter { from { opacity: 0; transform: translateY(26px) scale(.85); } to { opacity: 1; transform: none; } }
+@keyframes ppr-pop { from { opacity: 0; transform: scale(.7); } to { opacity: 1; transform: none; } }
+.ppr-enter { animation: ppr-enter .45s cubic-bezier(.2, .8, .2, 1) both; }
+.ppr-pop { animation: ppr-pop .35s ease-out both; }
+.ppr-reduced *, .ppr-reduced { animation: none !important; transition: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .ppr-app *, .ppr-overlay * { animation: none !important; transition: none !important; }
+}
+
+/* full-screen overlay (the extension; also usable as a modal on a web page) */
+.ppr-overlay {
+  position: fixed; inset: 0; z-index: 2147483000; overflow: auto; padding: 44px 10px 20px;
+  background: rgba(14, 17, 26, .78);
+}
+.ppr-close {
+  position: fixed; top: 8px; right: 10px; z-index: 1; font: 600 14px system-ui, sans-serif;
+  padding: 7px 14px; border-radius: 999px; border: 0; background: #fff; color: #1d2230; cursor: pointer;
+}
+.ppr-message {
+  max-width: 460px; margin: 15vh auto 0; padding: 22px; border-radius: 14px; background: #f7f5f0;
+  color: #1d2230; font: 15px/1.45 system-ui, sans-serif; text-align: center;
+}
+.ppr-message .ppr-btn { margin-top: 12px; }
+.ppr-spinner {
+  width: 30px; height: 30px; margin: 0 auto 12px; border-radius: 50%;
+  border: 3px solid #d8d2c4; border-top-color: #2459d6; animation: ppr-spin 1s linear infinite;
+}
+@keyframes ppr-spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 520px) {
+  .ppr-app { padding: 10px; border-radius: 10px; }
+  .ppr-big { font-size: 26px; }
+  .ppr-side { padding: 8px; }
+  .ppr-board { grid-template-columns: repeat(4, var(--ppr-card)) minmax(64px, auto); }
+}

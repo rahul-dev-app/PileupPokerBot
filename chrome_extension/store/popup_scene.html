@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;width:1280px;height:800px;background:linear-gradient(135deg,#2b2f3a,#3a2f55);font-family:system-ui,sans-serif;color:#fff;display:flex;align-items:center;justify-content:center;gap:80px}
+.text h2{font-size:44px;margin:0 0 18px}.text p{font-size:22px;line-height:1.5;margin:0;color:#e3dff0;max-width:500px}
+.box{width:435px;height:537px;flex:none}
+.frame{width:300px;height:370px;transform:scale(1.45);transform-origin:top left;border-radius:10px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.5);background:#f7f5f0}
+iframe{width:300px;height:370px;border:0}
+</style></head><body>
+<div class="text"><h2>Two modes</h2><p><b>Compete:</b> play without help, then see the bot play your exact hands.<br><br><b>Suggest:</b> the bot's best move while you play.<br><br>The bot runs in your browser. Nothing is sent anywhere.</p></div>
+<div class="box"><div class="frame"><iframe id="popup" src="../extension/popup.html"></iframe></div></div>
+<script>document.getElementById("popup").onload = (e) => { e.target.contentDocument.querySelector("input[value=compete]").checked = true; };</script>
+</body></html>

@@ -1,0 +1,74 @@
+{
+ "b16_P1/cpu": {
+  "seconds_per_round": [
+   0.962,
+   0.412,
+   0.088,
+   0.004
+  ],
+  "seconds_per_game": 1.465,
+  "num_decks": 10,
+  "xla_flags": "--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=1",
+  "cpu": "AMD Ryzen 7 7700X, one core (taskset), JAX_PLATFORMS=cpu"
+ },
+ "b16_P1_h128inner/cpu": {
+  "seconds_per_round": [
+   0.371,
+   0.188,
+   0.09,
+   0.003
+  ],
+  "seconds_per_game": 0.653,
+  "num_decks": 10,
+  "xla_flags": "--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=1",
+  "cpu": "AMD Ryzen 7 7700X, one core (taskset), JAX_PLATFORMS=cpu"
+ },
+ "b16_P1_h64inner/cpu": {
+  "seconds_per_round": [
+   0.325,
+   0.17,
+   0.092,
+   0.002
+  ],
+  "seconds_per_game": 0.588,
+  "num_decks": 10,
+  "xla_flags": "--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=1",
+  "cpu": "AMD Ryzen 7 7700X, one core (taskset), JAX_PLATFORMS=cpu"
+ },
+ "beam16_argmax/cpu": {
+  "seconds_per_round": [
+   0.028,
+   0.029,
+   0.029,
+   0.001
+  ],
+  "seconds_per_game": 0.087,
+  "num_decks": 10,
+  "xla_flags": "--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=1",
+  "cpu": "AMD Ryzen 7 7700X, one core (taskset), JAX_PLATFORMS=cpu"
+ },
+ "card_K8S32/cpu": {
+  "seconds_per_round": [
+   2.695,
+   1.459,
+   0.888,
+   0.005
+  ],
+  "seconds_per_game": 5.047,
+  "num_decks": 3,
+  "xla_flags": "--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=1",
+  "cpu": "AMD Ryzen 7 7700X, one core (taskset), JAX_PLATFORMS=cpu"
+ },
+ "round_K8S32/cpu": {
+  "seconds_per_round": [
+   143.667,
+   17.686,
+   0.117,
+   0.001
+  ],
+  "seconds_per_game": 161.471,
+  "num_decks": 1,
+  "xla_flags": "--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=1",
+  "cpu": "AMD Ryzen 7 7700X, one core (taskset), JAX_PLATFORMS=cpu"
+ }
+}

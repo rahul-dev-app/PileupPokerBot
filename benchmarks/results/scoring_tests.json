@@ -1,0 +1,186 @@
+{
+  "hand_picked": {
+    "cases": 20,
+    "passed": 20,
+    "rows": [
+      {
+        "case": "empty board",
+        "expected": 0,
+        "reference": 0,
+        "python_env": 0.0,
+        "jax_env": 0.0,
+        "pass": true
+      },
+      {
+        "case": "row: no hand",
+        "expected": 0,
+        "reference": 0,
+        "python_env": 0.0,
+        "jax_env": 0.0,
+        "pass": true
+      },
+      {
+        "case": "row: pair",
+        "expected": 5,
+        "reference": 5,
+        "python_env": 5.0,
+        "jax_env": 5.0,
+        "pass": true
+      },
+      {
+        "case": "row: two pairs",
+        "expected": 60,
+        "reference": 60,
+        "python_env": 60.0,
+        "jax_env": 60.0,
+        "pass": true
+      },
+      {
+        "case": "row: three of a kind",
+        "expected": 125,
+        "reference": 125,
+        "python_env": 125.0,
+        "jax_env": 125.0,
+        "pass": true
+      },
+      {
+        "case": "row: four of a kind",
+        "expected": 325,
+        "reference": 325,
+        "python_env": 325.0,
+        "jax_env": 325.0,
+        "pass": true
+      },
+      {
+        "case": "row: flush",
+        "expected": 80,
+        "reference": 80,
+        "python_env": 80.0,
+        "jax_env": 80.0,
+        "pass": true
+      },
+      {
+        "case": "row: straight",
+        "expected": 180,
+        "reference": 180,
+        "python_env": 180.0,
+        "jax_env": 180.0,
+        "pass": true
+      },
+      {
+        "case": "row: straight flush",
+        "expected": 450,
+        "reference": 450,
+        "python_env": 450.0,
+        "jax_env": 450.0,
+        "pass": true
+      },
+      {
+        "case": "row: ace-high straight J Q K A",
+        "expected": 180,
+        "reference": 180,
+        "python_env": 180.0,
+        "jax_env": 180.0,
+        "pass": true
+      },
+      {
+        "case": "row: no wrap-around A 6 7 8",
+        "expected": 0,
+        "reference": 0,
+        "python_env": 0.0,
+        "jax_env": 0.0,
+        "pass": true
+      },
+      {
+        "case": "partial row: 2 cards pair",
+        "expected": 5,
+        "reference": 5,
+        "python_env": 5.0,
+        "jax_env": 5.0,
+        "pass": true
+      },
+      {
+        "case": "partial row: 3 cards with a pair",
+        "expected": 5,
+        "reference": 5,
+        "python_env": 5.0,
+        "jax_env": 5.0,
+        "pass": true
+      },
+      {
+        "case": "partial row: 3 cards three of a kind",
+        "expected": 125,
+        "reference": 125,
+        "python_env": 125.0,
+        "jax_env": 125.0,
+        "pass": true
+      },
+      {
+        "case": "partial row: 3-card straight does not score",
+        "expected": 0,
+        "reference": 0,
+        "python_env": 0.0,
+        "jax_env": 0.0,
+        "pass": true
+      },
+      {
+        "case": "corners: flush counts x2",
+        "expected": 160,
+        "reference": 160,
+        "python_env": 160.0,
+        "jax_env": 160.0,
+        "pass": true
+      },
+      {
+        "case": "two scoring hands: x2",
+        "expected": 20,
+        "reference": 20,
+        "python_env": 20.0,
+        "jax_env": 20.0,
+        "pass": true
+      },
+      {
+        "case": "all 9 + discard straight flush: x3 discard, x6",
+        "expected": 27420,
+        "reference": 27420,
+        "python_env": 27420.0,
+        "jax_env": 27420.0,
+        "pass": true
+      },
+      {
+        "case": "all 9 + discard pair: x6",
+        "expected": 19410,
+        "reference": 19410,
+        "python_env": 19410.0,
+        "jax_env": 19410.0,
+        "pass": true
+      },
+      {
+        "case": "all 9, discard scores nothing: x5",
+        "expected": 16100,
+        "reference": 16100,
+        "python_env": 16100.0,
+        "jax_env": 16100.0,
+        "pass": true
+      }
+    ]
+  },
+  "random": {
+    "boards": 200000,
+    "full_boards": 105922,
+    "seed": 0,
+    "jax_vs_python_mismatches": 0,
+    "jax_vs_reference_mismatches_full_boards": 0,
+    "jax_vs_reference_mismatches_partial_boards": 14,
+    "boards_per_multiplier": {
+      "1": 58971,
+      "2": 38537,
+      "3": 53331,
+      "4": 41233,
+      "5": 7047,
+      "6": 881
+    },
+    "boards_with_scoring_discard": 881,
+    "max_score": 11220.0
+  }
+}

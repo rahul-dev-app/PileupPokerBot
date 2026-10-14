@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../extension/replay/replay.css">
+<style>
+  body { margin: 0; padding: 12px; background: #2b2f3a; font-family: system-ui, sans-serif; width: 1000px; }
+  .ppr-hands, .ppr-total, .ppr-analysis, .ppr-accuracy, .ppr-rounds, .ppr-note, .ppr-controls .ppr-btn { display: none !important; }
+</style></head>
+<body>
+<div id="replay"></div>
+<script src="../extension/policy.js"></script>
+<script src="../extension/replay/replay.js"></script>
+<script>
+  // The README animation: the greedy baseline (as the player) against the value search bot on one deck.
+  fetch("greedy_vs_bot.json").then((r) => r.json()).then((data) => {
+    PPReplay.render(document.getElementById("replay"), data, { reducedMotion: false });
+    const relabel = () => {
+      for (const e of document.querySelectorAll("#replay *")) {
+        if (e.children.length) continue;
+        const t = e.textContent;
+        if (t === "You " || t === "You") e.textContent = t.replace("You", "Greedy");
+        else if (t === "Bot " || t === "Bot") e.textContent = t.replace("Bot", "Value search");
+        else if (t.startsWith("The bot wins")) e.textContent = t.replace("The bot", "Value search");
+      }
+    };
+    relabel();
+    new MutationObserver(relabel).observe(document.getElementById("replay"), { childList: true, subtree: true, characterData: true });
+    document.body.dataset.ready = "1";
+  });
+</script>
+</body></html>

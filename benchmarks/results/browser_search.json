@@ -1,0 +1,92 @@
+{
+ "description": "In-browser value search (chrome_extension/extension/search.js, b16_P1_h128inner config) on compare_agents.make_decks(1000, 0); search seeds 0-2 (rng(seed*100003+deck, round)). Paired differences against the JAX runs of the same config (benchmarks/results/fast_search/b16_P1_h128inner*.npz, same search seed index but a different PRNG) and against value search K=8 S=32 (per-deck scores from compare_agents.py --out-csv).",
+ "per_seed": {
+  "0": {
+   "js": [
+    6846.9,
+    74.4
+   ],
+   "jax": [
+    6897.4,
+    71.6
+   ],
+   "js_minus_jax": [
+    -50.5,
+    52.2
+   ],
+   "js_minus_K8S32": [
+    -34.3,
+    55.7
+   ],
+   "same_score_as_jax": 0.359
+  },
+  "1": {
+   "js": [
+    6854.2,
+    72.1
+   ],
+   "jax": [
+    6866.9,
+    73.8
+   ],
+   "js_minus_jax": [
+    -12.6,
+    48.1
+   ],
+   "js_minus_K8S32": [
+    -26.9,
+    52.0
+   ],
+   "same_score_as_jax": 0.355
+  },
+  "2": {
+   "js": [
+    6886.0,
+    72.4
+   ],
+   "jax": [
+    6808.0,
+    71.8
+   ],
+   "js_minus_jax": [
+    78.1,
+    48.9
+   ],
+   "js_minus_K8S32": [
+    4.9,
+    55.3
+   ],
+   "same_score_as_jax": 0.364
+  }
+ },
+ "three_seeds": {
+  "js": [
+   6862.4,
+   67.3
+  ],
+  "jax": [
+   6857.4,
+   66.5
+  ],
+  "js_minus_jax": [
+   5.0,
+   29.8
+  ],
+  "js_minus_K8S32": [
+   -18.8,
+   46.4
+  ],
+  "jax_minus_K8S32": [
+   -23.8,
+   45.1
+  ]
+ },
+ "K8S32": [
+  6881.2,
+  72.7
+ ],
+ "calls_per_game_js": [
+  4551,
+  60919
+ ]
+}

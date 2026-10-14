@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "PokerGrid 4x4",
+  "version": "1.3.0",
+  "description": "Play the 4x4 poker card game against a strong bot, then watch a round-by-round replay of your game vs the bot's.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PokerGrid 4x4"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.puzzmo.com/runtime.html*"
+      ],
+      "js": [
+        "policy.js",
+        "replay/replay.js",
+        "content.js"
+      ],
+      "css": [
+        "replay/replay.css"
+      ],
+      "world": "MAIN",
+      "all_frames": true,
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.puzzmo.com/runtime.html*"
+      ],
+      "js": [
+        "bridge.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  }
+}
