@@ -1,6 +1,6 @@
 # PileupPokerBot
 
-Agents that learn to play [Pile-Up Poker](https://www.puzzmo.com/game/pile-up-poker), a single-player card game on Puzzmo, and a Chrome extension, **PokerGrid 4x4**, that lets you play against the best of them on the website or shows its suggestions while you play.
+Agents that learn to play [Pile-Up Poker](https://www.puzzmo.com/game/pile-up-poker), a single-player card game on Puzzmo, and a Chrome extension, **[PokerGrid 4x4](https://chrome.google.com/webstore/detail/lgopfmcbdlogoilfekdpjdolopnhlmmb)**, that lets you play against the best of them on the website or shows its suggestions while you play.
 
 ![The greedy baseline (left) and the value search bot (right) play the same four hands, round by round.](docs/images/greedy_vs_value_search.gif)
 
@@ -125,15 +125,14 @@ The training scripts print the JAX backend at startup, log to TensorBoard under 
 
 ### Install the Chrome extension (PokerGrid 4x4)
 
-The extension needs no Python and no trained models: the two networks it uses are in the repository.
+Install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/lgopfmcbdlogoilfekdpjdolopnhlmmb), choose the mode in the extension's popup and open the game on Puzzmo:
 
-1. Use the folder `chrome_extension/extension/`, or build a zip with `python chrome_extension/package.py` (written to `chrome_extension/dist/pokergrid-4x4-<version>.zip`) and unzip it into a new folder.
-2. Open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and select the folder that contains `manifest.json`.
-3. Choose the mode in the extension's popup and open the game on Puzzmo:
-   - **Compete** (default): no help during the game; afterwards the bot plays the same hands and a "You vs Bot" replay shows both games and checks each of your rounds.
-   - **Suggest**: the bot's plan for the round while you play.
+- **Compete** (default): no help during the game; afterwards the bot plays the same hands and a "You vs Bot" replay shows both games and checks each of your rounds.
+- **Suggest**: the bot's plan for the round while you play.
 
-See [docs/chrome-extension.md](docs/chrome-extension.md) and the [privacy policy](docs/privacy.md).
+To run it from this repository instead (no Python or trained models needed), load `chrome_extension/extension/` as an unpacked extension: see [docs/chrome-extension.md](docs/chrome-extension.md#install).
+
+More: [docs/chrome-extension.md](docs/chrome-extension.md) and the [privacy policy](docs/privacy.md).
 
 ![The suggest-mode panel: best move, plan for the round, discard card, expected final score and other moves.](docs/images/suggest_panel.png)
 

@@ -1,6 +1,6 @@
 # PokerGrid 4x4 (Chrome extension)
 
-PokerGrid 4x4 is a Chrome extension for [Pile-Up Poker on Puzzmo](https://www.puzzmo.com/game/pile-up-poker) with two modes, chosen in its popup (click the extension icon):
+PokerGrid 4x4 ([Chrome Web Store](https://chrome.google.com/webstore/detail/lgopfmcbdlogoilfekdpjdolopnhlmmb)) is a Chrome extension for [Pile-Up Poker on Puzzmo](https://www.puzzmo.com/game/pile-up-poker) with two modes, chosen in its popup (click the extension icon):
 
 - **Compete** (default): no help while you play. When you finish, the bot plays the same 4 hands, and a "You vs Bot" replay opens on top of the game, with a check of each of your rounds.
 - **Suggest**: move suggestions while you play: the plan for the rest of the round, the discard card and the expected final score.
@@ -13,11 +13,13 @@ The extension never plays for you. It reads only the board, the hand and the dis
 
 ## Install
 
-1. Get the extension folder: either `chrome_extension/extension/` from this repository, or a zip built by `python chrome_extension/package.py` (unzip it into a new folder; `manifest.json` is at the root of the zip, as the Chrome Web Store requires).
+From the [Chrome Web Store](https://chrome.google.com/webstore/detail/lgopfmcbdlogoilfekdpjdolopnhlmmb): click **Add to Chrome**, then click the extension icon (pin it from the puzzle-piece menu) to choose the mode, and open https://www.puzzmo.com/game/pile-up-poker.
+
+From this repository (for development):
+
+1. Get the extension folder: either `chrome_extension/extension/`, or a zip built by `python chrome_extension/package.py` (unzip it into a new folder; `manifest.json` is at the root of the zip, as the Chrome Web Store requires).
 2. Open `chrome://extensions` and turn on **Developer mode** (top right).
 3. Click **Load unpacked** and select the folder that contains `manifest.json`.
-4. Click the extension icon (pin it from the puzzle-piece menu) to choose the mode.
-5. Open https://www.puzzmo.com/game/pile-up-poker and start the game.
 
 It works in Chrome, Edge, Brave and other Chromium browsers, version 111 or later. Only the normal 4x4 game is supported; other game modes (5x5, Fantasy Land, Moon) show a note instead.
 
